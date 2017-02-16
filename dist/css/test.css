@@ -1,0 +1,4 @@
+tr.border_bottom td, th {
+  border-top: 1px solid #bcbcbc;
+  border-bottom:1pt solid #bcbcbc;
+}

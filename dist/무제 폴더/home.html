@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Free</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="../dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../dist/css/flat-ui.css" rel="stylesheet">
+    <link href="../dist/css/test.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../dist/img/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="../../dist/js/vendor/html5shiv.js"></script>
+      <script src="../../dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <style>
+      body {
+        /*min-height: 2000px;*/
+        padding-top: 70px;
+      }
+    </style>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="./home.html">Pet Sitting</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li onclick="onClicked(this)" id="home" class="active"><a href="#">Home</a></li>
+            <li onclick="onClicked(this)" id="asset"><a href="#">Asset</a></li>
+            <li onclick="onClicked(this)"><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li class="active"><a href="./">Static top</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron" id="home_contents">
+        <h1>Block Chain</h1>
+        <p>A blockchain — originally block chain — is a distributed database that maintains a continuously-growing list of ordered records called blocks.</p>
+        <p>God bless you.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../components/#navbar" role="button">See more &raquo;</a>
+        </p>
+      </div>
+
+      <div class="jumbotron" id="contact_contents" style="display: none;">
+        <h1>Asset</h1>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+      </div>
+
+      <div class="container" id="asset_contents" style="display: none;">
+
+
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="./img/thumbnail/home.png" alt="...">
+              <div class="caption">
+                <h3>Home</h3>
+                <p>오너 : 유동원</p>
+                <p>위치 : 위도, 경도</p>
+                <p>위치 : 위도, 경도</p>
+                <p>위치 : 위도, 경도</p>
+                <p>위치 : 위도, 경도</p>
+                <p>위치 : 위도, 경도</p>
+                <p>위치 : 위도, 경도</p>
+                <p>위치 : 위도, 경도</p>
+                <p><a role="button" class="btn btn-primary" href="#">Button</a> <a role="button" class="btn btn-default" href="#">Button</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="./img/thumbnail/dog.png" alt="...">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a role="button" class="btn btn-primary" href="#">Button</a> <a role="button" class="btn btn-default" href="#">Button</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="./img/thumbnail/home.jpeg" alt="...">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a role="button" class="btn btn-primary" href="#">Button</a> <a role="button" class="btn btn-default" href="#">Button</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="../dist/js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../dist/js/vendor/video.js"></script>
+    <script src="../dist/js/flat-ui.min.js"></script>
+    <script src="../docs/assets/js/application.js"></script>
+    <script src="../dist/js/test.js"></script>
+  </body>
+</html>
